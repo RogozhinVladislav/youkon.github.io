@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список страниц верстки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61536017-f4a7-4aaf-a708-fa73ef88c02d&amp;lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<div class="player-holder" data-player></div>
+<div class="view-holder" data-view-holder>
+    <picture class="view-holder__picture">
+        <img src="" alt="">
+    </picture>
+    <span></span>
+</div>
+<div class="view-partner-holder" data-view-partner-holder>
+    <div class="partners__media">
+        <picture class="partners__picture">
+            <img src="" alt="" class="partners__img">
+        </picture>
+        <picture class="partners__picture">
+            <img src="" alt="" class="partners__img">
+        </picture>
+    </div>
+</div>
+<div class="flow-container flow-container--index">
+    <div class="content">
+        <header class="header">
+            <div class="header__logo">
+                <div class="logo logo--header">
+                    <img src="./images/svg/logo-white.svg" alt="" class="logo__img">
+                </div>
+            </div>
+            <div class="header__nav" data-desktop="nav">
+                <nav class="header-nav" data-move="nav">
+    <ul class="header-nav__list">
+        <li class="header-nav__item is-active ">
+            <a href="#section01" class="header-nav__link">
+                <span>Деятельность</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section02" class="header-nav__link">
+                <span>Партнеры</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section03" class="header-nav__link">
+                <span>Сегменты</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section04" class="header-nav__link">
+                <span>Миссия</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section05" class="header-nav__link">
+                <span>Кейсы</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section06" class="header-nav__link">
+                <span>Владельцам</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section07" class="header-nav__link">
+                <span>Для покупателей</span>
+            </a>
+        </li>
+        <li class="header-nav__item">
+            <a href="#section08" class="header-nav__link">
+                <span>Контакты</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+                <div class="burger" data-burger>
+                    <svg class="i-icon">
+                        <use xlink:href="#burger"></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+<div class="container">
+    <h1>Список страниц верстки</h1>
+
+    <ul>
+        <li>
+            <a href="main.html">Главная</a>
+        </li>
+        <li>
+            <a href="logo.html">Лого</a>
+        </li>
+        <li>
+            Модальные окна <!-- data-modal-open - открытие модального окна -->
+            <ul>
+                <li>
+                    <a href="#request" data-modal-open>Оставить заявку</a>
+                </li>
+                <li>
+                    <a href="#callSuccess" data-modal-open>Спасибо за заявку</a>
+                </li>
+                <li>
+                    <a href="#privacy" data-modal-open>Политика конфиденциальности</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!--<div id="request" class="modal">
+    <div class="modal__container">
+        <div class="modal__head">
+            <div class="modal__title">Оставить заявку</div>
+        </div>
+        <div class="modal__body">
+            <form class="modal__form" action="" data-form data-ajax-url="">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="label">
+                            <input class="input" type="text" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="label">
+                            <input class="input" type="text" placeholder="E-mail">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="label">
+                            <input class="input" type="text" placeholder="Телефон" data-inputmask data-input-required="phone">
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__checkbox">
+                    <div class="checkbox">
+                        <label class="checkbox__label">
+                            <input class="checkbox__input" type="checkbox" checked data-input-required="checkbox">
+                            <div class="checkbox__emulator">
+                                <svg class="i-icon">
+                                    <use xlink:href="#checked"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__text">
+                                <span>Я согласен на сбор и обработку администрацией Интернет-сайта своих персональных данных в соответствии с Федеральным законом от 27.07.2006 №152-Ф3 «О персональных данных», а так же подтверждаю, что в полном объеме ознакомился и согласен с</span>
+                                <a href="#">Политикой хранения, защиты и обработки персональных данных</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <button type="submit" class="btn">
+                        <span>Отправить</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="callSuccess" class="modal">
+    <div class="modal__container">
+        <div class="modal__head">
+            <div class="modal__title">Спасибо за заявку, мы свяжемся с вами в течение дня</div>
+        </div>
+    </div>
+</div>
+
+<div id="privacy" class="modal">
+    <div class="modal__container">
+        <div class="modal__head">
+            <div class="modal__title">Политика конфиденциальности</div>
+        </div>
+        <div class="modal__body">
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+            <p>
+
+                Настоящая Политика в отношении обработки персональных данных (далее - Политика) направлена на защиту прав и свобод физических лиц, персональные данные которых обрабатывает группа компаний Mr. Mish.
+            </p>
+        </div>
+    </div>
+</div>-->
+<script type="text/javascript" src="bundle.js"></script>
